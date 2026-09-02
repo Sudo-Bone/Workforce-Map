@@ -1473,7 +1473,7 @@ ${jsBlock}
   function escapeHtml(s){if(s==null)return '';return String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#39;');}
   function markerSize(c){return Math.round(20+Math.log2(c+1)*4)}
   const map=L.map('map');
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{maxZoom:19,subdomains:'abcd',attribution:'&copy; OpenStreetMap contributors &copy; CARTO'}).addTo(map);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png?key=cb1_2tg0_1_f486e684f9dcab10e9f29a38',{maxZoom:19,subdomains:'abcd',attribution:'&copy; OpenStreetMap contributors &copy; CARTO'}).addTo(map);
   map.setView([BAKED.view.lat, BAKED.view.lng], BAKED.view.zoom);
   const grp=L.featureGroup();
   for(const f of BAKED.dataset.features){
